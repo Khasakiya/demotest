@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  body {
+    background-color: #f3f4f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+
+  .main-div {
+    width: 100%;
+    max-width: 500px;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin: 20px auto;
+  }
+  
+  .child-div {
+    text-align: center;
+  }
+  
+  figure img {
+    width: 80px;
+    margin: 10px 0;
+  }
+  
+  figcaption {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #333;
+  }
+  
+
+  .addItems {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px 0;
+    background-color: #f7f7f7;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 5px;
+  }
+  
+  .addItems input {
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 8px;
+    background: transparent;
+  }
+  
+  .add-btn {
+    font-size: 1.2rem;
+    color: #28a745;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .add-btn:hover {
+    color: #218838;
+  }
+  
+
+  .showItems {
+    margin-top: 20px;
+  }
+  
+  .eachItems {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #e0e0e0;
+  }
+  
+  .eachItems h3 {
+    margin: 0;
+    font-size: 1rem;
+    color: #333;
+    text-transform: capitalize;
+  }
+  
+  .todo-btn i {
+    margin-left: 10px;
+    font-size: 1.1rem;
+    color: #007bff;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .todo-btn i:hover {
+    color: #0056b3;
+  }
+  
+  .todo-btn .fa-trash-alt {
+    color: #dc3545;
+  }
+  
+  .todo-btn .fa-trash-alt:hover {
+    color: #c82333;
+  }
+  
+
+  .btn {
+    padding: 8px 15px;
+    border: none;
+    outline: none;
+    background-color: #ffc107;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #e0a800;
+  }
+  
+  .effect04 {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .effect04 span {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .effect04::before {
+    content: '';
+    position: absolute;
+    background-color: #fff;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    transition: left 0.3s ease-in-out;
+    z-index: 0;
+  }
+  
+  .effect04:hover::before {
+    left: 0;
+  }
+
+  
